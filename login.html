@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+    <script src="js/redirect.js"></script>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/login.css" rel="stylesheet" />
+
+    <title>Login</title>
+</head>
+<body>
+    <div class="content">
+        <div class="logo">
+            <img src="images/logo_small.png" />
+        </div>
+        <form class="login-form" action="#" method="post">
+            <h3>Log In</h3>
+            <div class="form-group field">
+                <label for="userEmail">
+                    Email
+                </label>
+                <div>
+                    <input name="userEmail" type="email" id="userEmail" class="form-control" placeholder="username@domain.com" autofocus required />
+                </div>
+            </div>
+            <div class="form-group field">
+                <label for="userPass">
+                    Password
+                </label>
+                <div>
+                    <input name="userPass" id="userPass" class="form-control" type="password" placeholder="Password" required />
+                </div>
+            </div>
+            <div class="btn-container">
+                <input type="submit" class="btn btn-lg" value="Submit" id="btn"/>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

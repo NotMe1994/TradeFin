@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+    <script src="js/mailHandler.js"></script>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/signup.css" rel="stylesheet" />
+
+    <title>Signup</title>
+</head>
+<body>
+    <div class="content">
+        <div class="logo">
+            <div class="logo">
+                <img src="images/logo_small.png" />
+            </div>
+        </div>
+        <form id="signup">
+            <h3>Sign up</h3>
+            <p class="info">Apply to TradeFin's private beta. We currently have a waiting list, but don’t worry, we are adding new companies to the platform every day. </p>
+            <div class="form-group field">
+                <label for="userName">
+                    Your Full Name
+                </label>
+                <div>
+                    <input name="userName" id="userName" class="form-control" type="text" placeholder="Your Full Name" autofocus required />
+                </div>
+            </div>
+            <div class="form-group field">
+                <label for="jobTitle">
+                    Job Title
+                </label>
+                <div>
+                    <input name="jobTitle" id="jobTitle" class="form-control" type="text" placeholder="e.g. CFO" required />
+                </div>
+            </div>
+            <div class="form-group field">
+                <label for="userEmail">
+                    Email
+                </label>
+                <div>
+                    <input name="userEmail" id="userEmail" class="form-control" type="email" placeholder="username@domain.com" required />
+                </div>
+            </div>
+            <div class="form-group field">
+                <label for="userPhone">
+                    Phone Number
+                </label>
+                <div>
+                    <input name="userPhone" id="userPhone" class="form-control" type="tel" placeholder="(123) 456-78910" pattern="^\(\d{3}\)\d{2}\-\d{5}$" required/>
+                </div>
+            </div>
+            <div class="form-group field">
+                <label for="Message">
+                    Message
+                </label>
+                <div>
+                    <textarea name="Message" id="userMessage" class="form-control" placeholder="Your Message" required></textarea>
+                </div>
+            </div>
+
+            <div class="btn-container">
+                <input type="submit" class="btn btn-lg" value="Submit"/>
+            </div>
+        </form>
+    </div>
+    <div class="message-container">
+        <div class="message">
+            <span>Have a question?</span>
+            <a href="home.html">Contact us</a>
+        </div>
+    </div>
+</body>
+</html>
